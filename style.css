@@ -70,10 +70,14 @@ nav ul li a:hover{
   width: 100%;
   position: relative;
   margin: auto;
-  background-image: url("https://clipart-library.com/images/8c65boyzi.gif");
+  /* background-image: url("https://clipart-library.com/images/8c65boyzi.gif");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+}
+.sildeIMG{
+  height: 450px;
+  width: 100%;
 }
 
 
