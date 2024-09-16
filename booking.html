@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/ libs/font-awesome/6.6.0/css/all.min.css"   integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/  M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="   crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Booking.com</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo_img">
+        <a href="index.html"><img src="images/fineLogo.gif" alt=""></a>
+      </div>     
+      
+      <form id="form1">
+        <input type="text" id="inputxt" placeholder="search movies...">
+        <button id="submitbtn">GO</button>
+      </form>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">NOW SHOWING</a></li>
+          <li><a href="#">COMMING SOON</a></li>
+          <li><a href="booking.html">BUY TICKETS</a></li>
+          <li><a href="#">EMMANUEL TV</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- <section class="missedsection">
+    <div class="txt">
+      <p>
+        BOOK MOVIE TICKET
+      </p>
+    </div>
+    
+    </section> -->
+
+   <section class="sectionSIX">
+    <div class="sixContent">
+     <div class="h4div"> <h4 id="formHeading">TICKETS BOOKING FORM</h4></div>
+      <form id="emmanuel_TV_Form" onsubmit="return emmanuel_TV_Validation()">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder= "Surname   First-Name   Other-Name (optional)" />
+            <small id="nameError" class="error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="text" id="age" name="age" placeholder="Enter your Age" />         
+          <small id="ageError" class="error"></small>
+        </div>
+    
+        <div class="form-group">
+          <label for="contact">Contact:</label>
+          <input type="tel" id="contact" name="contact" placeholder="Enter your Phone Number "/>
+          <small id="contactError" class="error"></small>
+        </div>
+    
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" />
+            <small id="emailError" class="error"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="Movie">Movie:</label>
+            <select id="movie" name="movie">
+                <option value="">Select Movies</option>
+                <option value="Movie1">The return Of Emmanuel Season 1</option>
+                <option value="Movie2">Game Of Thrones Season 1</option>
+                <option value="Movie3">Into the Bad Land Season 1</option>
+            </select>
+                <small id="movieError" class="error"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="seat">Seat:</label>
+            <select id="seat" name="seat">
+                <option value="">Select Sitting Position</option>
+                <option value="seat1">Front Seat</option>
+                <option value="seat2">Middle Seat</option>
+                <option value="seat3">Back Seat</option>
+            </select>
+            <small id="seatError" class="error"></small>
+        </div>
+
+
+
+        <div class="form-group">
+          <label for="date-select">Date:</label>
+          <select id="date-select">
+            <option value="">Select Movie Date:</option>
+            <option value="" id="day1"></option>
+            <option value="" id="day2"></option>
+            <option value="" id="day3"></option>
+            <option value="" id="day4"></option>
+            <option value="" id="day5"></option>
+          </select>
+            <small id="date-selectError" class="error"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="time">Time:</label>
+            <select id="time" name="time">             
+                <option value="">Select Movie Time</option>
+                <option value="18:00">18:00</option>
+                <option value="20:00">20:00</option>
+                <option value="23:00">23:00</option>
+            </select>
+            <small id="timeError" class="error"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="ticketType">Ticket Type:</label>
+            <select id="ticketType" name="ticketType">
+                <option value="">Select Ticket Type</option>
+                <option value="Regular">Regular - $10</option>
+                <option value="Premium">Premium - $15</option>
+            </select>
+            <small id="ticketTypeError" class="error"></small>
+        </div>
+
+       
+        <div class="form-group">
+          <label for="numTickets">Number of Tickets:</label>
+          <input type="number" id="numTickets" name="numTickets" placeholder="Pick Number of Tickets">
+          <small id="numTicketsError" class="error"></small>
+        </div>
+
+
+        <div class="buttonDiv">
+          <button class="button" id="button5">BOOK</button>
+
+        </div>
+
+        
+             
+      </form>  
+    </div>
+    </section>
+
+   <!-- <section class="sectionFOUR">
+    <div class="sectionFOUR_content">
+      <div>
+        <img src="images/ticket.PNG" alt="" width="592" height="300">
+      </div>
+      <div>
+        <img src="images/our app.jpeg" alt="" width="592" height="300">
+      </div>
+    </div>
+   
+    </section>
+   -->
+
+    <footer>
+    <div class="footer_img">
+        <a href="index.html">
+            <img src="images/fineLogo.gif" alt="logo">
+        </a>
+    </div>
+
+    <div class="footer_1">
+        <p>For You</p>
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Emmanuel TV</a></li>
+            <li><a href="">Coming Soon</a></li>
+            <li><a href="">Now Showing</a></li>
+            <li><a href="booking.html">Buy Tickets</a></li>
+        </ul>
+    </div>    
+    <div class="footer_1">
+        <p>Company</p>
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">NewsRoom</a></li>
+            <li><a href="">Career</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms and Condition</a></li>
+        </ul>
+    </div>
+    <div class="footer_1">
+        <p>We're Social</p>
+        <ul>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Youtube</a></li>
+            <li><a href="">linkdin</a></li>
+        </ul>
+    </div>
+    </footer>
+      <div class="copy">Copyright &copy; 2024 Emmanuel TV, Inc. All Right Reserved</div>
+
+
+
+  
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script2.js"></script>
+    <script src="script.js"></script>
+    <script src="js.js"></script>
+  </body>
+</html>
