@@ -38,7 +38,7 @@
     
     </section> -->
 
-   <section class="sectionSIX">
+   <section class="sectionSIX" id="sectionSIX">
     <div class="sixContent">
      <div class="h4div"> <h4 id="formHeading">TICKETS BOOKING FORM</h4></div>
       <form id="emmanuel_TV_Form" onsubmit="return emmanuel_TV_Validation()">
@@ -70,9 +70,9 @@
             <label for="Movie">Movie:</label>
             <select id="movie" name="movie">
                 <option value="">Select Movies</option>
-                <option value="Movie1">The return Of Emmanuel Season 1</option>
-                <option value="Movie2">Game Of Thrones Season 1</option>
-                <option value="Movie3">Into the Bad Land Season 1</option>
+                <option value="The return Of Emmanuel Season 1">The return Of Emmanuel Season 1</option>
+                <option value="Game Of Thrones Season 1">Game Of Thrones Season 1</option>
+                <option value="Into the Bad Land Season 1">Into the Bad Land Season 1</option>
             </select>
                 <small id="movieError" class="error"></small>
         </div>
@@ -81,9 +81,9 @@
             <label for="seat">Seat:</label>
             <select id="seat" name="seat">
                 <option value="">Select Sitting Position</option>
-                <option value="seat1">Front Seat</option>
-                <option value="seat2">Middle Seat</option>
-                <option value="seat3">Back Seat</option>
+                <option value="Seat 1-8 availiable">Front Seat</option>
+                <option value="Seat 15-23 availiable">Middle Seat</option>
+                <option value="Seat 42-54 availiable">Back Seat</option>
             </select>
             <small id="seatError" class="error"></small>
         </div>
@@ -94,10 +94,10 @@
           <label for="date-select">Date:</label>
           <select id="date-select">
             <option value="">Select Movie Date:</option>
-            <option value="" id="day1"></option>
-            <option value="" id="day2"></option>
-            <option value="" id="day3"></option>
-            <option value="" id="day4"></option>
+            <option value="todayFormatted" id="day1"></option>
+            <option value="tomorrowFormatted" id="day2"></option>
+            <option value="nextTomorrowFormatted" id="day3"></option>
+            <option value="day4" id="day4"></option>
             <option value="" id="day5"></option>
           </select>
             <small id="date-selectError" class="error"></small>
@@ -143,18 +143,45 @@
     </div>
     </section>
 
-   <!-- <section class="sectionFOUR">
-    <div class="sectionFOUR_content">
-      <div>
-        <img src="images/ticket.PNG" alt="" width="592" height="300">
+    <center id="centerResult">
+      <div class="ticket" id="ticket">
+        <div class="orignal">
+              <div class="pass" >
+               <small class="small1">EMMANUEL-TV TICKET PASS</small>
+              </div>
+            <div>
+              <small class="small1" id="movieResult">Movie: The return of Emmanuel Season 1</small>
+            </div>
+            <div>
+              <small class="small1" id="ticketTypeResult">Ticket-Type: Regular</small>
+            </div>
+  
+            <div>
+              <small class="small1" id="dateResult">Date</small>
+            </div>
+  
+            <div>
+              <small class="small1" id="timeResult">Time: 10:00</small>
+            </div>
+  
+            <div>
+              <small class="small1" id="numTicketResult">Number of Ticket(s): 10</small>
+            </div>
+  
+            <div>
+              <small class="small1" id="seatResult">Seat Number: Front Seat</small>
+            </div>
+  
+            <div>
+              <small class="small1" id="priceResult">Total Price: $15</small>
+            </div>
+            <div>
+              <small class="small1" id="print"><button class="print">print</button></small>
+            </div>
+        </div>
+        <img src="https://cdn.pixabay.com/photo/2023/02/28/01/51/qr-code-7819654_640.jpg" alt="" class="barCode">
       </div>
-      <div>
-        <img src="images/our app.jpeg" alt="" width="592" height="300">
-      </div>
-    </div>
-   
-    </section>
-   -->
+    </center>
 
     <footer>
     <div class="footer_img">
