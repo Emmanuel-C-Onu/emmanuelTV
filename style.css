@@ -252,6 +252,30 @@ nav ul li a:hover{
   grid-template-columns: 2fr 1fr;
 
 }
+#sectionSIX{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#centerResult{
+  display: none;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.print{
+  color: white;
+  background-color: seagreen;
+  border: 1px solid seagreen;
+  border-radius: 3px;
+  padding: 0.1px 8px;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+.print:hover{
+  background-color: green;
+  transition: .4s ease-in-out;
+}
 
 .sectionSIX{
   background-image: url('images/bubble_bg3.webp.crdownload.gif');
@@ -356,6 +380,34 @@ background: radial-gradient(green, #193342);
   display: flex;
   justify-content: center;
   
+}
+
+.small1{
+  font-size: 13px;
+  font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+}
+.barCode{
+  height: 185px; 
+  width: 170px;
+}
+center {
+  display: none;
+  padding: 35px 0;
+  background: darkcyan;
+}
+.ticket{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border: 3px solid darkcyan;
+ background-color: white;
+ width: fit-content;
+ height: fit-content;
+ border-radius: 10px;
+ padding-left: 10px;
+ padding-right: 2px;
+ font-weight: bold;
+ line-height: 1.2;
 }
 
 footer{
